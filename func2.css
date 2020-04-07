@@ -1,0 +1,61 @@
+#arcs {
+    display: inline-block;
+  }
+  #arcs div {
+    border: 4px solid #0ebeff;
+    display: inline-block;
+    min-width: 1px;
+    min-height: 1px;
+    padding: 0;
+    border-radius: 50%;
+    border-top-color: transparent;
+    border-left-color: transparent;
+    font-size: 1px;
+  }
+  #arcs #last {
+    border-width: 5px;
+    color:#0ebeff;
+  }
+  #arcs {
+    transform: rotate(-135deg);
+  }
+  
+  #arcs {
+    animation-name: rotor;
+    animation-delay: 999ms;
+    animation-duration: 2000ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear; 
+  }
+  
+  @keyframes rotor {
+    0% {
+      transform: rotate(-135deg);
+    }
+  
+    100% {
+      transform: rotate(-495deg);
+    }
+  } 
+   #arcs div {
+    animation-name: stator;
+    animation-delay: 999ms;
+    animation-duration: 34s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear; 
+    
+  }
+  
+  @keyframes stator {
+    0% {
+      transform: rotate(0deg);
+    }
+  
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
+body {
+    background-color: black;
+}  
